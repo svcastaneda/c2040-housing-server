@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Priority:</strong>
+  <%= @work_item.priority %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @work_item.description %>
+</p>
+
+<p>
+  <strong>Picture:</strong>
+  <%= @work_item.picture %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @work_item.user_id %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @work_item.status %>
+</p>
+
+<%= link_to 'Edit', edit_work_item_path(@work_item) %> |
+<%= link_to 'Back', work_items_path %>
