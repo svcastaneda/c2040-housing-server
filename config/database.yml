@@ -6,8 +6,8 @@
 #
 default: &default
   adapter: postgresql
-	encoding: unicode
-	pool: 5
+  encoding: unicode
+  pool: 5
 
 development:
   <<: *default
@@ -23,5 +23,5 @@ test:
 production:
   <<: *default
   database: c2040-housing-server_production
-	username: c2040-housing-server
-	password: <%= ENV[C2040-HOUSING-SERVER_DATABASE_PASSWORD] %>
+  username: c2040-housing-server
+  password: <%= ENV['C2040-HOUSING-SERVER_DATABASE_PASSWORD'] %>
