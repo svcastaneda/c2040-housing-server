@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  root 'work_items#index'
   resources :locations
   resources :work_items
   resources :users
