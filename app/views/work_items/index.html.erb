@@ -9,6 +9,7 @@
       <th>Description</th>
       <th>Picture</th>
       <th>User</th>
+			<th>Location</th>
       <th>Status</th>
       <th colspan="3"></th>
     </tr>
@@ -21,6 +22,7 @@
         <td><%= work_item.description %></td>
         <td><%= work_item.picture %></td>
         <td><%= work_item.user_id %></td>
+				<td><%= work_item.location_id %></td>
         <td><%= work_item.status %></td>
         <td><%= link_to 'Show', work_item %></td>
         <td><%= link_to 'Edit', edit_work_item_path(work_item) %></td>
